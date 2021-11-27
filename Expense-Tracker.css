@@ -14,9 +14,16 @@ h2{
     font-weight: normal;
 }
 
-table, tr, th{
+table, th, td{
     border: 1px solid rgb(198, 184, 184);
-    background-color: rgb(190, 221, 201);
     table-layout: fixed;
     width: 100%;
+}
+td{
+    font-weight: normal;
+    background-color: rgb(152, 175, 204);
+}
+th{
+    background-color: rgba(149, 157, 71, 0.47);
+
 }

@@ -1,26 +1,15 @@
 function addExpense(){
-
-    var expenseName = document.createElement("th");
-    var expenseDate = document.createElement("th");
-    var expenseAmount = document.createElement("th");
-
-    var name = document.createTextNode(document.getElementById("expenseName").value);
-    var date = document.createTextNode( document.getElementById("expenseDate").value);
-    var amount = document.createTextNode(document.getElementById("expenseAmount").value);
+    var table = document.getElementById("expenseTable");
+    var row = table.insertRow(-1); // create new row
+    var cellOne = row.insertCell(0); // create <td> elements
+    var cellTwo = row.insertCell(1);
+    var cellThree = row.insertCell(2); 
     
+    cellOne.innerHTML = document.getElementById("expenseName").value;
+    cellTwo.innerHTML = document.getElementById("expenseDate").value;
+    cellThree.innerHTML = "$" + document.getElementById("expenseAmount").value;
 
-    expenseName.appendChild(name);
-    expenseDate.appendChild(date);
-    expenseAmount.appendChild(amount);
-    expenseAmount.prepend("$");
-    
-    var expense = document.createElement("tr");
-    expense.appendChild(expenseName);
-    expense.appendChild(expenseDate);
-    expense.appendChild(expenseAmount);
-    document.body.appendChild(expense);
-
-    document.getElementById("expenseName").value = "";
+    document.getElementById("expenseName").value = ""; // reset text field to empty
     document.getElementById("expenseDate").value = "";
     document.getElementById("expenseAmount").value = "";
 }

@@ -12,25 +12,24 @@
     </div>
     <form>
         <div class="dataValues">
-        <label for="expenseName"><b>Name: </b></label>
-        <input type="text" placeholder="Where was the expense made?" id="expenseName"> 
+            <label for="expenseName"><b>Name: </b></label>
+            <input type="text" placeholder="Where was the expense made?" id="expenseName"> 
 
-        <label for="expenseDate"><b>Date: </b></label>
-        <input type="date" id="expenseDate">
+            <label for="expenseDate"><b>Date: </b></label>
+            <input type="date" id="expenseDate">
 
-        <label for="expenseAmount"><b>Amount: <b></b> </label>
-        <input type = "number" placeholder="$" id="expenseAmount">
-        <input type="submit" value="Add Expense" onclick="addExpense(); return false;">
+            <label for="expenseAmount"><b>Amount: <b></b> </label>
+            <input type = "number" placeholder="$" id="expenseAmount">
+            <input type="submit" value="Add Expense" onclick="addExpense(); return false;">
         </div>
     </form>
-    <div id="wrapperClass">
-        <table>
-            <tr>
-                <th>Name</th>
-                <th>Date</th>
-                <th>Amount</th>
-            </tr>
-        </table>
+    <table id="expenseTable">
+        <tr>
+            <th>Name</th>
+            <th>Date</th>
+            <th>Amount</th>
+        </tr>
+    </table>
     </div>
 </body>
 
