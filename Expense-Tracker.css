@@ -1,0 +1,22 @@
+.wrapHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 0.5em;
+}
+
+h1{
+    font-size: 3em;
+    font-weight: normal;
+}
+h2{
+    font-weight: normal;
+}
+
+table, tr, th{
+    border: 1px solid rgb(198, 184, 184);
+    background-color: rgb(190, 221, 201);
+    table-layout: fixed;
+    width: 100%;
+}
