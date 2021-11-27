@@ -20,8 +20,11 @@
 
             <label for="expenseAmount"><b>Amount: <b></b> </label>
             <input type = "number" placeholder="$" id="expenseAmount">
-            <input type="submit" value="Add Expense" onclick="addExpense(); return false;">
         </div>
+        <div class="expenseBtn">
+            <input type="submit" value="Add Expense" onclick="addExpense(); return false;" id="sbtn">
+        </div>
+
     </form>
     <table id="expenseTable">
         <tr>
