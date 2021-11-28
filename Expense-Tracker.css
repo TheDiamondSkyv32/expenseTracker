@@ -13,6 +13,7 @@ h1{
     font-weight: normal;
     color:darkgreen;
 }
+
 h2{
     font-weight: normal;
 }
@@ -22,14 +23,17 @@ table, th, td{
     table-layout: fixed;
     width: 100%;
 }
+
 td{
     font-weight: normal;
-    background-color: rgb(152, 175, 204);
+    background-color: rgba(97, 105, 123, 0.401);
 }
+
 th{
-    background-color: rgba(149, 157, 71, 0.47);
+    background-color: rgb(255, 255, 255);
 
 }
+
 form{
     border: 3px solid gray;
 }
@@ -40,17 +44,10 @@ form{
                          "a b"
                          "a b";
     grid-template-rows: 1fr 1fr 1fr;
-
-}
-.dataValues{
     background-color: rgb(53, 211, 200);
     text-align: left;
     padding-right:2fr;
 }
-
-
-
-
 
 .expenseBtn{
     background-color: rgb(53, 211, 200);
@@ -67,4 +64,8 @@ form{
 }
 #sbtn:active{
     background-color: slategrey;
+}
+
+.clearButton{
+    background-color: rgba(152, 175, 204, 0.388);
 }
