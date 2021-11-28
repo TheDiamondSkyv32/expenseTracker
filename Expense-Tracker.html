@@ -10,7 +10,7 @@
         <h1>Expense Tracker</h1>
         <h2>Add A New Item:</h2>
     </div>
-    <form>
+    <form onsubmit="return false;">
         <div class="dataValues">
             <label for="expenseName"><b>Name: </b></label>
             <input type="text" placeholder="Where was the expense made?" id="expenseName"> 
@@ -22,7 +22,7 @@
             <input type = "number" placeholder="$" id="expenseAmount">
         </div>
         <div class="expenseBtn">
-            <input type="submit" value="Add Expense" onclick="addExpense(); return false;" id="sbtn">
+            <input type="submit" value="Add Expense" onclick="addExpense();" id="sbtn">
         </div>
 
     </form>
@@ -31,19 +31,10 @@
             <th>Name</th>
             <th>Date</th>
             <th>Amount</th>
+            <th>Clear Expense</th>
         </tr>
     </table>
     </div>
 </body>
-
-
-
-
-
-
-
-
-
-
 
 </html>
